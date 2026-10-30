@@ -50,7 +50,7 @@ It provides a platform for carrying out various cybersecurity exercises and hand
 
 ##  Lab Architecture
 
-![](![1-Virtual box-Interface.jpg]()
+![](![1-Virtual-box-Interface.png]()
 )
 
 
@@ -104,7 +104,7 @@ IPv4 Prefix:  10.0.0.0/24
 DHCP:         Enabled
 IPv6:         Disabled
 
-![](2-screenshot-network-settings-1.png)
+![](2-Network-Settings.png)
 
 A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
@@ -131,7 +131,7 @@ The VM was allocated:
 ```text
 RAM: 2048 MB
 ```
-![](3-screenshot-kali-linux.png)
+![](3-Kali-Linux-Page.png)
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 
 
@@ -153,7 +153,7 @@ DNS: 8.8.8.8
 
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
 
-![](4-screenshot-kali-network-settings.png)
+![](4-Editing-network-settings.png)
 
 ---
 
@@ -174,17 +174,6 @@ If a future exercise changes or damages the VM configuration, the machine can be
 
 ---
 
-# 🔎 Lab Verification
-
-| ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
-| ----------------------------- | ------------------------------- | ------------------------------- |
-| 🌐 Check IP address           | `ip a`                          | Correct Kali IP displayed       |
-| 📡 Test gateway               | `ping 10.0.0.1`                 | Successful replies              |
-| 🌍 Test Internet connectivity | `ping 8.8.8.8`                  | Successful replies              |
-| 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain resolves                 |
-| 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
-| 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Baseline configuration restored |
-
 ### Example Results
 
 ```text
@@ -200,7 +189,7 @@ DNS:
 
 ---
 
-# 🐞 Problems Encountered & Solutions
+# Problems Encountered & Solutions
 
 Documenting problems is an important part of the project.
 
@@ -238,7 +227,7 @@ After enabling virtualization, the VM started successfully.
 
 ---
 
-# 💡 What I Learned
+# What I Learned
 
 Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
 
@@ -272,29 +261,8 @@ I learned that documenting commands, configuration, screenshots, problems, and s
 
 ---
 
-# 🔐 Security & Ethical Use
 
-This laboratory is intended strictly for education purposes only.
+**Oju Emozino**\
+Cybersecurity Professional B084
 
----
 
-# 🔗 Tools & Resources
-
-- **7-Zip:** [https://7-zip.org/download.html](https://7-zip.org/download.html)
-- **VirtualBox:** [https://virtualbox.org/wiki/Downloads](https://virtualbox.org/wiki/Downloads)
-- **Kali Linux:** [https://kali.org/get-kali](https://kali.org/get-kali)
-
----
-
-# 👤 Author
-
-**Waqas Karim**\
-Cybersecurity Professional B082
-
-LinkedIn: [https://www.linkedin.com/in/waqaskarim/](https://www.linkedin.com/in/waqaskarim/)
-
----
-
-## 📌 Project Information
-
-**Program Name:** Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pentesting Lab Setup | **Repository:** GitHub
