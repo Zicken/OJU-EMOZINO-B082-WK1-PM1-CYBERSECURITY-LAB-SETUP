@@ -1,6 +1,6 @@
 <div align="center">
 
-**Cybersecurity Lab Environment Setup**
+Cybersecurity Lab Environment Setup
 
 **Building virtual lab for penetration testing and ethical hacking practice**
 </div>
@@ -50,6 +50,8 @@ It provides a platform for carrying out various cybersecurity exercises and hand
 
 ##  Lab Architecture
 
+![](![1-Virtual box-Interface.jpg]()
+)
 
 
 
@@ -88,9 +90,7 @@ Additional target machines can be added to the same virtual network in future pr
 
 ## Step 2. Install VirtualBox
 
-VirtualBox was installed.
-
-
+VirtualBox was installed as the hypervisor.
 
 ---
 
